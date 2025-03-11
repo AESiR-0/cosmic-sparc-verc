@@ -10,7 +10,7 @@ type CardProps = {
 		_id: string;
 		title: string;
 		imageUrl: string;
-		price: number;
+		price: string | number;
 		isFree: boolean;
 		category: {
 			name: string;
@@ -48,6 +48,7 @@ const Card = ({ event, hasOrderLink, hidePrice }: CardProps) => {
 							alt="edit"
 							width={20}
 							height={20}
+							unoptimized={true}
 						/>
 					</Link>
 
